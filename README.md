@@ -1,6 +1,6 @@
 <h1 align="center">QuickNote</h1>
 
-QuickNote is a simple and efficient note-taking web application built with Flask. It allows users to create, store, and manage personal notes securely.
+<h2 align="center">QuickNote is a simple and efficient note-taking web application built with Flask. It allows users to create, store, and manage personal notes securely.</h2>
 
 ## Table of Contents
 
