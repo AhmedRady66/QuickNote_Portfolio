@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}QuickNote | Login{% endblock %}
+{% block content %}
+<!-- Start Intro Section -->
+<section id="intro-section" class="py-5" style="text-align: center; position: relative;">
+    <div class="cover-image" style="background-image: url('/static/images/coverimage.png'); height: 100vh; background-size:contain; background-position: center; position: relative;">
+        <div class="container" style="position: absolute; top: 50%; left: 51%; transform: translate(-50%, -50%); color: #000000;">
+            <h1 class="display-4">QuickNote</h1>
+            <p class="lead" style="font-size: 18px;">Organize and keep track of your thoughts and tasks with ease.</p>
+            <a href="#login-form" class="btn btn-primary btn-lg mt-4">Log In</a>
+        </div>
+    </div>
+</section>
+<!-- End Intro Section -->
+
+<!-- Start Feature Section -->
+<section id="features-section" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #007bff;">Key Features of QuickNote</h2>
+        <div class="row text-center">
+            <!-- Feature 1 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-pencil-alt fa-3x mb-3" style="color: #007bff;"></i>
+                <h4>Fast Note Taking</h4>
+                <p>Capture your thoughts quickly and efficiently with our easy-to-use interface.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-plus-circle fa-3x mb-3" style="color: #007bff;"></i>
+                <h4>Add and Delete Notes</h4>
+                <p>Easily add new notes and remove outdated ones in just a few clicks.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-lock fa-3x mb-3" style="color: #007bff;"></i>
+                <h4>Secure Storage</h4>
+                <p>Your notes are stored securely with encryption, ensuring your privacy is protected.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Feature Section -->
+
+<!-- Start About Section -->
+<section id="about-section" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #007bff;">About QuickNote</h2>
+        <p class="text-center mb-5" style="font-size: 22px;">
+            In our fast-paced lives, it's easy to get overwhelmed and forget important tasks and ideas. QuickNote was created to provide a simple, fast, and secure way to keep track of daily responsibilities and thoughts. By offering an intuitive interface, QuickNote helps users stay focused and organized without the hassle of complex tools. In a world full of distractions, QuickNote aims to be a reliable resource that helps people manage their tasks and ideas effortlessly.
+        </p>        
+        <div class="text-center">
+            <p>Connect with me:</p>
+            <a href="https://www.linkedin.com/in/ahmed-rady-a5b380243/" target="_blank" class="mx-2">
+                <i class="fab fa-linkedin fa-2x" style="color: #007bff;"></i>
+            </a>
+            <a href="https://github.com/AhmedRady66" target="_blank" class="mx-2">
+                <i class="fab fa-github fa-2x" style="color: #007bff;"></i>
+            </a>
+            <a href="https://twitter.com/AboRady662" target="_blank" class="mx-2">
+                <i class="fab fa-twitter fa-2x" style="color: #007bff;"></i>
+            </a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="https://ahmedrady66.github.io/QuickNote_LandingPage/" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- Start Login -->
+<div id="login-form" class="d-flex justify-content-center mt-5 mb-4">
+    <div class="card shadow-lg p-4" style="width: 400px; border-radius: 10px;">
+        <h3 class="text-center mb-4" style="color: #007bff;">Login to QuickNote</h3>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Login -->
+
+
+{% endblock %}
