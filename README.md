@@ -8,6 +8,7 @@
 - [Technologies](#technologies) 
 - [Setup](#setup) 
 - [Usage](#usage)
+- [Live Demo](#live-demo)
 
 ## Features
 
@@ -56,3 +57,5 @@ The app should now be running on http://127.0.0.1:5000/.
 1. Log in and start creating notes.
 1. Add new notes, view existing ones, and manage your note-taking efficiently.
 
+## Live Demo
+[QuickNote Live Demo](https://ahmedrady.pythonanywhere.com/login?next=%2F)
