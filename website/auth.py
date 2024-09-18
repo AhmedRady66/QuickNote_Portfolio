@@ -44,7 +44,7 @@ def sign_up():
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
 
-        user = User.query.filter_by(email=email).first()
+        user = User.query.filter_by(email=email).first() # test if user already exists in database 
 
         if user:
             flash('Email already exists.', category='error')
@@ -57,6 +57,8 @@ def sign_up():
         elif password2 != password1:
             flash('Passwords don\'t match, please enter password right.', category='error')
         else:
+            # Hash the user's password using PBKDF2 with SHA-256 before storing in the database for security.
+            # This ensures the raw password is not saved directly, protecting against unauthorized access if the database is compromised.
             new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method='pbkdf2:sha256'))
             db.session.add(new_user)
             db.session.commit()
